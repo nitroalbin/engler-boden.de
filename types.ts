@@ -30,13 +30,6 @@ export interface Service {
   image: string;
 }
 
-export interface Sector {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-}
-
 export interface SiteContent {
   site: SiteMeta;
   company: CompanyInfo;
@@ -57,15 +50,6 @@ export interface SiteContent {
       };
     };
     services: Service[];
-    sectors: Sector[];
-    about: {
-      headline: string;
-      subheadline: string;
-      text_main: string;
-      text_secondary: string;
-      values: Array<{ title: string; text: string }>;
-      image: string;
-    };
     legal: {
       impressum: string;
       datenschutz: string;

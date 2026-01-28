@@ -1,8 +1,49 @@
-import React from 'react';
-import ContactForm from '../components/ContactForm';
+import React, { useState } from 'react';
 import { content } from '../content';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'bd7325dc-9dc5-4162-8965-726662768eb4',
+          ...formData
+        })
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
   return (
     <div className="bg-neutral-900 py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,8 +95,89 @@ const Contact: React.FC = () => {
             </div>
           </div>
           
-          <div>
-            <ContactForm />
+          <div className="bg-neutral-800 p-8 border border-neutral-700">
+            <h3 className="text-2xl font-bold mb-6">Anfrage senden</h3>
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 focus:border-red-600 focus:outline-none transition-colors"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  E-Mail *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 focus:border-red-600 focus:outline-none transition-colors"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                  Telefon
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 focus:border-red-600 focus:outline-none transition-colors"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  Nachricht *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 focus:border-red-600 focus:outline-none transition-colors resize-none"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="w-full bg-red-600 hover:bg-red-700 px-8 py-4 font-bold uppercase tracking-wider transition-colors disabled:opacity-50"
+              >
+                {status === 'loading' ? 'Wird gesendet...' : 'Anfrage absenden'}
+              </button>
+
+              {status === 'success' && (
+                <p className="text-green-500 text-center font-medium">
+                  ✓ Nachricht erfolgreich gesendet!
+                </p>
+              )}
+
+              {status === 'error' && (
+                <p className="text-red-500 text-center font-medium">
+                  ✗ Fehler beim Senden. Bitte versuchen Sie es erneut.
+                </p>
+              )}
+            </form>
           </div>
         </div>
       </div>

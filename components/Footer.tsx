@@ -13,8 +13,7 @@ const Footer: React.FC = () => {
               ENGLER<span className="text-red-600">.</span>
             </Link>
             <p className="mt-4 text-neutral-400 max-w-sm">
-              Spezialisten für Industriebeschichtungen und professionelle Fugenabdichtung. 
-              Wir sorgen für Hygiene, Sicherheit und Langlebigkeit Ihrer Arbeitsumgebung.
+              Ihr Spezialist für Balkonsanierung, Garagenbeschichtung und hygienische Bodenlösungen in Breisach und Umgebung.
             </p>
           </div>
           

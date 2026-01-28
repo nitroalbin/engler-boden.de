@@ -110,15 +110,6 @@ export const content: SiteContent = {
         "image": "/schwimmbad.webp"
       }
     ],
-    "sectors": [], // Gelöscht wie gewünscht
-    "about": {
-       "headline": "",
-       "subheadline": "",
-       "text_main": "",
-       "text_secondary": "",
-       "values": [],
-       "image": ""
-    }, // Gelöscht/Leeren
     "legal": {
       "impressum": "Angaben gemäß § 5 TMG: Personengesellschaft Birgit Engler. Steuernummer: 07332/21001. Finanzamt Freiburg-Land.",
       "datenschutz": "Datenschutzerklärung: Wir erheben Daten nur zur Bearbeitung Ihrer Anfrage. Ihre Daten werden verschlüsselt übertragen und nicht an Dritte weitergegeben. Sie haben jederzeit das Recht auf Auskunft und Löschung."
