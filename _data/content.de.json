@@ -1,0 +1,146 @@
+{
+  "site": {
+    "name": "Engler Beschichtungstechnik",
+    "tagline": "Präzision, Beständigkeit, Hygiene.",
+    "description": "Zertifizierter Fachbetrieb für Industriebeschichtungen und professionelle Verfugungstechnik.",
+    "url": "https://engler-beschichtung.de",
+    "lang": "de"
+  },
+  "company": {
+    "name": "Engler Beschichtungs- und Verfugungstechnik GmbH",
+    "owner": "Max Engler",
+    "address": {
+      "street": "Industriestraße 42",
+      "city": "Musterstadt",
+      "zip": "12345"
+    },
+    "contact": {
+      "phone": "+49 (0) 123 456789",
+      "email": "info@engler-beschichtung.de",
+      "web3forms_key": "YOUR_WEB3FORMS_ACCESS_KEY"
+    }
+  },
+  "navigation": [
+    { "label": "Start", "url": "/" },
+    { "label": "Leistungen", "url": "/leistungen/" },
+    { "label": "Branchen", "url": "/branchen/" },
+    { "label": "Referenzen", "url": "/referenzen/" },
+    { "label": "Über uns", "url": "/ueber-uns/" },
+    { "label": "Kontakt", "url": "/kontakt/" }
+  ],
+  "pages": {
+    "home": {
+      "hero": {
+        "headline": "BÖDEN FÜR DIE INDUSTRIE.",
+        "subline": "Hochbelastbare Beschichtungen und präzise Verfugung nach höchsten Industriestandards. Wir schaffen die Basis für Ihren Erfolg.",
+        "cta_primary": "Unsere Leistungen",
+        "cta_secondary": "Anfrage senden",
+        "image": "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2000"
+      },
+      "stats": [
+        { "value": "20+", "label": "Jahre Erfahrung" },
+        { "value": "500k", "label": "m² Beschichtet" },
+        { "value": "100%", "label": "Zertifiziert" },
+        { "value": "24h", "label": "Reaktionszeit" }
+      ],
+      "intro": {
+        "title": "Profis arbeiten hier – schnell, hygienisch, dauerhaft.",
+        "text": "In der Industrie zählt Verlässlichkeit. Stillstandszeiten müssen minimiert, Hygienevorschriften strikt eingehalten werden. Als zertifizierter Fachbetrieb sind wir Ihr Partner für anspruchsvolle Boden- und Fugenlösungen."
+      }
+    },
+    "services": [
+      {
+        "id": "beschichtung",
+        "title": "Industriebeschichtung",
+        "description": "Hochbelastbare Epoxidharz- und Polyurethanbeschichtungen für extreme mechanische und chemische Beanspruchung.",
+        "features": [
+          "WHG-Fachbetrieb für Gewässerschutz",
+          "Rutschenhemmende Oberflächen",
+          "Chemikalienbeständig",
+          "Leicht zu reinigen"
+        ],
+        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "id": "verfugung",
+        "title": "Spezialverfugungen",
+        "description": "Präzise Fugenabdichtungen für Reinräume, Labore und Lebensmittelbetriebe unter Einhaltung höchster Hygienestandards.",
+        "features": [
+          "Säurefeste Verfugung",
+          "Lebensmittelechte Silikone",
+          "Fugenlose Übergänge",
+          "Hohlkehlen-Ausbildung"
+        ],
+        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "id": "sanierung",
+        "title": "Betonsanierung",
+        "description": "Professionelle Instandsetzung von geschädigten Industrieböden und Betonstrukturen zur Standortsicherung.",
+        "features": [
+          "Rissverpressung",
+          "Untergrundvorbereitung",
+          "Mörtel-Instandsetzung",
+          "Langzeitschutz"
+        ],
+        "image": "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=800"
+      }
+    ],
+    "sectors": [
+      {
+        "id": "lebensmittel",
+        "title": "Lebensmittelindustrie",
+        "description": "Hygienische Lösungen für Schlachthöfe, Bäckereien und Molkereien. Konform mit IFS und HACCP.",
+        "image": "https://images.unsplash.com/photo-1589405709102-125bac651ecb?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "id": "logistik",
+        "title": "Logistik & Handel",
+        "description": "Staubfreie und ebene Böden für reibungslosen Gabelstaplerverkehr und Hochregallager.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "id": "automotive",
+        "title": "Automotive & Garagen",
+        "description": "Ölresistente und optisch ansprechende Beschichtungen für Werkstätten und Parkhäuser.",
+        "image": "https://images.unsplash.com/photo-1486006396113-ad7b32b66bb1?auto=format&fit=crop&q=80&w=800"
+      }
+    ],
+    "references": [
+      {
+        "title": "Logistikzentrum West",
+        "location": "Münster",
+        "description": "15.000m² hochbelastbarer Magnesia-Estrich mit EP-Versiegelung.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "title": "Schlachthof Nord",
+        "location": "Hamburg",
+        "description": "Säurefeste Spezialverfugung in der Zerlegung nach HACCP.",
+        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "title": "Pharma-Labor Alpha",
+        "location": "Frankfurt",
+        "description": "Reinraumtaugliche Fugenabdichtung und ableitfähige Beschichtung.",
+        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
+      }
+    ],
+    "about": {
+      "headline": "Über Engler",
+      "subheadline": "Qualität ist kein Zufall.",
+      "text_main": "Seit über zwei Jahrzehnten steht der Name Engler für Qualität in der Bodenbeschichtung und Verfugungstechnik.",
+      "text_secondary": "Unser Team besteht aus zertifizierten Fachkräften, die jeden Quadratmeter mit der Präzision eines Profis bearbeiten.",
+      "values": [
+        { "title": "Präzision", "text": "In der Verfugung zählt jeder Millimeter." },
+        { "title": "Sicherheit", "text": "WHG-Zertifizierung und Einhaltung aller Sicherheitsstandards." },
+        { "title": "Termintreue", "text": "Zeit ist Geld. Unsere Projektplanung ist realistisch." }
+      ],
+      "image": "https://images.unsplash.com/photo-1590674406609-186bc47793d3?auto=format&fit=crop&q=80&w=1000"
+    },
+    "legal": {
+      "impressum": "Vertretungsberechtigt durch Max Engler. Registergericht: Amtsgericht Musterstadt. Registernummer: HRB 12345.",
+      "datenschutz": "Wir verarbeiten Ihre Daten ausschließlich zur Bearbeitung Ihrer Anfrage gemäß DSGVO. Es erfolgt keine Weitergabe an Dritte."
+    }
+  }
+}
