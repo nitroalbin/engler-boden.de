@@ -17,7 +17,7 @@ const projects = [
     after: "/b3.webp"
   },
   {
-    title: "Schwimmbadbeschichtung",
+    title: "Treppenbeschichtung",
     before: "/b4.webp",
     after: "/a4.webp"
   },

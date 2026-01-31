@@ -31,8 +31,8 @@ export const content: SiteContent = {
   "pages": {
     "home": {
       "hero": {
-        "headline": "BÖDEN FÜRS LEBEN.",
-        "subline": "Hochwertige Beschichtungen für Balkone, Garagen und Wohnräume. Dauerhaft schön, pflegeleicht und extrem belastbar.",
+        "headline": "BÖDEN, DIE ZU IHNEN PASSEN.",
+        "subline": "Acrylbeschichtungen für Balkone, Garagen und Wohnräume – schnell trocken, sofort belastbar und leicht zu pflegen. Nach 60 Minuten ist die sanierte Fläche wieder chemisch und mechanisch voll belastbar.",
         "cta_primary": "Unsere Leistungen",
         "cta_secondary": "Referenzen ansehen",
         "image": "/garage.webp"
@@ -45,7 +45,7 @@ export const content: SiteContent = {
       ],
       "intro": {
         "title": "Ihr Boden in besten Händen – Engler Bodenbeschichtung.",
-        "text": "Egal ob der in die Jahre gekommene Balkon, die staubige Garage oder der hygienische Boden für Ihre Metzgerei oder Küche: Wir bieten maßgeschneiderte Beschichtungslösungen, die nicht nur funktional, sondern auch optisch überzeugen. Als Fachbetrieb aus Breisach stehen wir für Handwerksehre und erstklassige Materialien."
+        "text": "Egal ob der in die Jahre gekommene Balkon, die staubige Garage oder der hygienische Boden für Ihre Metzgerei oder Küche: Wir bieten maßgeschneiderte Acryl-Beschichtungslösungen, die nicht nur funktional, sondern auch optisch überzeugen. Acryl trocknet schnell und ist im Gegensatz zu Epoxid zeitnah wieder belastbar. Als Fachbetrieb aus Breisach stehen wir für Handwerksehre und erstklassige Materialien."
       }
     },
     "services": [
@@ -64,7 +64,7 @@ export const content: SiteContent = {
       {
         "id": "garagenbeschichtung",
         "title": "Garagenbeschichtung",
-        "description": "Ölresistente, rutschfeste und extrem belastbare Epoxidharzböden für Ihre Garage oder Werkstatt.",
+        "description": "Ölresistente, rutschfeste und extrem belastbare Acrylbeschichtungen für Ihre Garage oder Werkstatt. Schnell trocken und rasch wieder nutzbar.",
         "features": [
           "Reifenweichmacher-resistent",
           "Leicht zu reinigen",
@@ -76,7 +76,7 @@ export const content: SiteContent = {
       {
         "id": "metzgereiboden",
         "title": "Metzgereiböden & Küchen",
-        "description": "Fugenlose, hygienische Bodenbeschichtungen nach HACCP-Standard. Ideal für Metzgereien, Profiküchen und Lebensmittelbetriebe.",
+        "description": "Fugenlose, hygienische Bodenbeschichtungen für Metzgereien, Profiküchen und Lebensmittelbetriebe.",
         "features": [
           "Antibakteriell",
           "Rutschsicher R11/R12",
@@ -88,7 +88,7 @@ export const content: SiteContent = {
       {
         "id": "verkaufsanhaenger",
         "title": "Verkaufsanhänger",
-        "description": "Spezielle Beschichtungen für Food-Trucks und Anhänger. Leicht, robust und absolut pflegeleicht.",
+        "description": "Spezielle Beschichtungen für Verkaufsanhänger. Leicht, robust und absolut pflegeleicht.",
         "features": [
           "Geringes Eigengewicht",
           "Chemikalienresistent",
@@ -98,16 +98,16 @@ export const content: SiteContent = {
         "image": "/foodvan.webp"
       },
       {
-        "id": "schwimmbad",
-        "title": "Schwimmbadbeschichtung",
-        "description": "Langlebige Beckenbeschichtungen für private Pools. Farbecht, chlorresistent und hautfreundlich.",
+        "id": "treppen",
+        "title": "Treppen",
+        "description": "Robuste, rutschfeste Treppenbeschichtungen für Innen- und Außenbereiche. Sicher, pflegeleicht und langlebig.",
         "features": [
-          "Chlor- & Algenresistent",
-          "Angenehme Haptik",
-          "Dauerhaft dicht",
-          "Individuelle Optik"
+          "Rutschhemmend",
+          "Stoßfest",
+          "Leicht zu reinigen",
+          "Witterungsbeständig"
         ],
-        "image": "/schwimmbad.webp"
+        "image": "/treppe.webp"
       }
     ],
     "legal": {

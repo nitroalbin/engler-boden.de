@@ -16,7 +16,7 @@ const Navigation: React.FC = () => {
                 ENGLER<span className="text-red-600">.</span>
               </span>
               <span className="text-[10px] uppercase tracking-widest text-neutral-400 font-semibold leading-none">
-                Beschichtungstechnik
+                Bodenbeschichtung
               </span>
             </Link>
           </div>
