@@ -18,6 +18,7 @@ export const content: SiteContent = {
     },
     "contact": {
       "phone": "01727602274",
+      "landline": "07668/9 47 48",
       "email": "engler-boden@web.de",
       "web3forms_key": "YOUR_WEB3FORMS_ACCESS_KEY"
     }
@@ -35,7 +36,7 @@ export const content: SiteContent = {
         "subline": "Acrylbeschichtungen für Balkone, Garagen und Wohnräume – schnell trocken, sofort belastbar und leicht zu pflegen. Nach 60 Minuten ist die sanierte Fläche wieder chemisch und mechanisch voll belastbar.",
         "cta_primary": "Unsere Leistungen",
         "cta_secondary": "Referenzen ansehen",
-        "image": "/garage.webp"
+        "image": "/newhero.jpeg"
       },
       "stats": [
         { "value": "15+", "label": "Jahre Erfahrung" },
@@ -107,7 +108,7 @@ export const content: SiteContent = {
           "Leicht zu reinigen",
           "Witterungsbeständig"
         ],
-        "image": "/treppe.webp"
+        "image": "/newtreppe.jpeg"
       }
     ],
     "legal": {

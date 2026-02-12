@@ -17,6 +17,7 @@ export interface CompanyInfo {
   };
   contact: {
     phone: string;
+    landline?: string;
     email: string;
     web3forms_key: string;
   };

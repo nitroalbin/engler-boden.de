@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <div className="animate-fadeIn">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center overflow-hidden">
+      <section className="relative h-[90vh] flex items-center overflow-hidden pt-24">
         <div className="absolute inset-0 z-0">
           <img 
             src={hero.image} 
@@ -16,9 +16,9 @@ const Home: React.FC = () => {
             width="2000"
             height="1125"
             fetchPriority="high"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-900/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
               <Link to="/leistungen" className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 uppercase tracking-widest transition-all focus:ring-4 focus:ring-red-600/50 outline-none">
                 {hero.cta_primary}
               </Link>
-              <Link to="/kontakt" className="border-2 border-white hover:bg-white hover:text-black text-white font-bold py-4 px-8 uppercase tracking-widest transition-all focus:ring-4 focus:ring-white/50 outline-none">
+              <Link to="/referenzen" className="border-2 border-white hover:bg-white hover:text-black text-white font-bold py-4 px-8 uppercase tracking-widest transition-all focus:ring-4 focus:ring-white/50 outline-none">
                 {hero.cta_secondary}
               </Link>
             </div>
