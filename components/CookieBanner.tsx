@@ -26,16 +26,24 @@ const CookieBanner: React.FC = () => {
       <div className="max-w-4xl mx-auto bg-neutral-900 border border-neutral-700 shadow-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-sm text-neutral-400">
           <p>
-            Wir nutzen Cookies, um unsere Website für Sie zu optimieren. Mit der Nutzung der Website erklären Sie sich damit einverstanden. 
+            Wir verwenden ausschließlich technisch notwendige lokale Speicherung für Ihre Einstellungen. 
             Details finden Sie in unserer <a href="#/impressum" className="text-white underline focus:ring-1 focus:ring-red-600">Datenschutzerklärung</a>.
           </p>
         </div>
-        <button 
-          onClick={accept}
-          className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase tracking-widest px-8 py-3 whitespace-nowrap transition-colors focus:ring-4 focus:ring-red-600/50 outline-none"
-        >
-          Einverstanden
-        </button>
+        <div className="flex gap-3">
+          <button 
+            onClick={() => { localStorage.setItem('cookie-consent', 'declined'); setIsVisible(false); }}
+            className="border border-neutral-600 hover:border-white text-neutral-300 hover:text-white text-xs font-bold uppercase tracking-widest px-6 py-3 whitespace-nowrap transition-colors focus:ring-4 focus:ring-white/30 outline-none"
+          >
+            Ablehnen
+          </button>
+          <button 
+            onClick={accept}
+            className="bg-red-600 hover:bg-red-700 active:bg-red-800 text-white text-xs font-bold uppercase tracking-widest px-8 py-3 whitespace-nowrap transition-colors focus:ring-4 focus:ring-red-600/50 outline-none"
+          >
+            Einverstanden
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -8,6 +8,9 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-neutral-900/95 backdrop-blur-sm border-b border-neutral-800" role="navigation" aria-label="Hauptnavigation">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-red-600 text-white px-4 py-2 font-bold z-50">
+        Zum Hauptinhalt springen
+      </a>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
@@ -27,11 +30,12 @@ const Navigation: React.FC = () => {
                 <Link
                   key={item.path}
                   to={item.path}
+                  aria-current={location.pathname === item.path ? 'page' : undefined}
                   className={`${
                     location.pathname === item.path
                       ? 'text-red-600'
                       : 'text-neutral-300 hover:text-white'
-                  } px-3 py-2 text-sm font-bold uppercase tracking-wider transition-colors focus:outline-none focus:text-red-600`}
+                  } px-3 py-2 text-sm font-bold uppercase tracking-wider transition-colors rounded focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-neutral-900`}
                 >
                   {item.label}
                 </Link>
@@ -44,7 +48,7 @@ const Navigation: React.FC = () => {
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
-              className="inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600"
+              className="inline-flex items-center justify-center p-3 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 min-w-[44px] min-h-[44px]"
             >
               <span className="sr-only">{isOpen ? 'Menü schließen' : 'Menü öffnen'}</span>
               {isOpen ? (
@@ -72,7 +76,7 @@ const Navigation: React.FC = () => {
               key={item.path}
               to={item.path}
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-4 text-base font-bold text-white hover:bg-neutral-800 border-l-4 border-transparent hover:border-red-600 focus:bg-neutral-800"
+              className="block px-3 py-4 text-base font-bold text-white hover:bg-neutral-800 border-l-4 border-transparent hover:border-red-600 focus:bg-neutral-800 focus:border-red-600 focus:outline-none"
             >
               {item.label}
             </Link>

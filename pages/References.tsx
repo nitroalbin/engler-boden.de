@@ -33,8 +33,8 @@ const References: React.FC = () => {
     <div className="bg-neutral-900 py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-20 text-center">
-          <h1 className="text-sm font-bold text-red-600 uppercase tracking-widest mb-2 underline underline-offset-8 inline-block">Galerie</h1>
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter mt-4">Unsere Ergebnisse</h2>
+          <p className="text-sm font-bold text-red-600 uppercase tracking-widest mb-2 underline underline-offset-8 inline-block">Galerie</p>
+          <h1 className="text-5xl md:text-6xl font-black uppercase tracking-tighter mt-4">Unsere Ergebnisse</h1>
           <p className="mt-6 text-neutral-400 max-w-2xl mx-auto">
             Überzeugen Sie sich selbst von der Qualität unserer Arbeit. Hier sehen Sie den direkten Vergleich zwischen dem alten Zustand und unserer professionellen Neubeschichtung.
           </p>
@@ -48,6 +48,9 @@ const References: React.FC = () => {
                   <img 
                     src={project.before} 
                     alt={`${project.title} vorher`} 
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     className="w-full aspect-[4/3] object-cover grayscale opacity-60" 
                   />
                   <div className="absolute top-4 left-4 bg-black/80 px-4 py-2 text-xs font-bold uppercase tracking-widest border-l-2 border-neutral-500">
@@ -59,6 +62,9 @@ const References: React.FC = () => {
                   <img 
                     src={project.after} 
                     alt={`${project.title} nachher`} 
+                    width="800"
+                    height="600"
+                    loading="lazy"
                     className="w-full aspect-[4/3] object-cover border-2 border-red-600/20" 
                   />
                   <div className="absolute top-4 left-4 bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-widest shadow-lg">

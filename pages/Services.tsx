@@ -7,8 +7,8 @@ const Services: React.FC = () => {
     <div className="bg-neutral-900 py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-20">
-          <h1 className="text-sm font-bold text-red-600 uppercase tracking-widest mb-2 underline underline-offset-8">Leistungsportfolio</h1>
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter">Unsere Lösungen</h2>
+          <p className="text-sm font-bold text-red-600 uppercase tracking-widest mb-2 underline underline-offset-8">Leistungsportfolio</p>
+          <h1 className="text-5xl md:text-6xl font-black uppercase tracking-tighter">Unsere Lösungen</h1>
         </header>
 
         <div className="space-y-32">
@@ -20,6 +20,10 @@ const Services: React.FC = () => {
                   <img 
                     src={service.image} 
                     alt={service.title} 
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full aspect-video object-cover shadow-2xl transition-all duration-500 hover:scale-[1.02]" 
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800';
