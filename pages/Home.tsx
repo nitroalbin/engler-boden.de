@@ -32,15 +32,29 @@ const Home: React.FC = () => {
                 </Link>
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-neutral-800">
-              <img
-                src={hero.image}
-                alt="Treppenbeschichtung"
-                width="1200"
-                height="900"
-                fetchPriority="high"
-                className="w-full h-full object-cover aspect-[4/3]"
-              />
+            <div className="overflow-hidden rounded-2xl border border-neutral-800 flex gap-0">
+              {hero.images ? (
+                hero.images.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`Hero Bild ${i + 1}`}
+                    width="600"
+                    height="450"
+                    fetchPriority="high"
+                    className="w-1/2 h-auto"
+                  />
+                ))
+              ) : (
+                <img
+                  src={hero.image}
+                  alt="Treppenbeschichtung"
+                  width="1200"
+                  height="900"
+                  fetchPriority="high"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
+              )}
             </div>
           </div>
         </div>

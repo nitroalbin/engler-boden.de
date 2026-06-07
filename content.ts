@@ -36,7 +36,7 @@ export const content: SiteContent = {
         "subline": "Acrylbeschichtungen für Balkone, Garagen und Wohnräume – schnell trocken, sofort belastbar und leicht zu pflegen. Nach 60 Minuten ist die sanierte Fläche wieder chemisch und mechanisch voll belastbar.",
         "cta_primary": "Unsere Leistungen",
         "cta_secondary": "Referenzen ansehen",
-        "image": "/newtreppe.jpeg"
+        "images": ["/heroneu1.jpeg", "/heroneu2.jpeg"]
       },
       "stats": [
         { "value": "15+", "label": "Jahre Erfahrung" },

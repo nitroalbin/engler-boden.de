@@ -42,7 +42,8 @@ export interface SiteContent {
         subline: string;
         cta_primary: string;
         cta_secondary: string;
-        image: string;
+        image?: string;
+        images?: string[];
       };
       stats: Array<{ value: string; label: string }>;
       intro: {
